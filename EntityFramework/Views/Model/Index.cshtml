@@ -1,0 +1,13 @@
+﻿@using EntityFramework.Models;
+@model List<Model>;
+
+@foreach(var item in Model)
+{
+ <ul>   
+     <li>
+         <a href="/brand?brandId=@item.BrandId">
+             Model Id:@item.Id, Model Name:@item.Name
+         </a>
+     </li>
+ </ul>   
+}
